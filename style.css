@@ -1,0 +1,275 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+  text-decoration: none;
+}
+
+h1 {
+  margin: 0 auto;
+  text-align: center;
+  background-color: #f3f3f3;
+  padding: 20px;
+  /* margin-bottom: 20px; */
+  border-radius: 5px;
+}
+
+a:link,
+a:visited {
+  padding: 5px 5px;
+  border-radius: 5px;
+}
+
+a:hover,
+a:active {
+  background-color: #ffea8c;
+  /* border-radius: 5px; */
+}
+
+.image-link:link,
+.image-link:visited {
+  padding: 2px 0px;
+  display: inline-block;
+}
+
+.image-link:hover,
+.image-link:active {
+  background-color: #ffea8c;
+}
+
+.main-canvas {
+  height: 100vh;
+  /* max-width: 1400px; */
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-box {
+  /* height: 100vh;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1400px;
+  /* margin: 0 auto;  */
+  align-items: center;
+}
+
+.header {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.kumio-logo {
+  max-width: 400px;
+  margin: 0;
+}
+
+.navigation {
+  width: 100%;
+  padding: 0 0 20px 0;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+}
+
+.nav-page:link,
+.nav-page:visited {
+  /* padding: 10px 10px; */
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.nav-page:hover,
+.nav-page:active {
+  /* padding: 10px 0; */
+  background-color: #ffea8c;
+  border-radius: 5px;
+}
+
+.col {
+  background-color: #f3f3f3;
+  padding: 20px 20px 40px 20px;
+  border: 1px solid #a1a1a1;
+  border-radius: 5px;
+}
+
+.logo {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+}
+
+/* li .blank {
+  color: #999;
+} */
+
+.question {
+  background-color: #ebebeb;
+}
+
+.col-header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#image-preview {
+  position: absolute;
+  display: none;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #dddddd;
+  padding: 5px;
+  background-color: white;
+  z-index: 1000;
+}
+
+#image-preview img {
+  max-width: 400px;
+  max-height: 400px;
+}
+
+/* ANALYSIS BUTTONS */
+
+li {
+  align-items: center;
+  gap: 2px;
+  display: grid;
+  grid-template-columns: 4fr 1fr 1fr 1fr;
+}
+
+.nav-list li {
+  display: flex;
+}
+
+.analysis-links:link,
+.analysis-links:visited {
+  padding: 1px 0px;
+  text-align: center;
+}
+
+.analysis-V {
+  background-color: #ffbb002f;
+}
+
+.analysis-F {
+  background-color: #ffd3441e;
+}
+
+.analysis-O {
+  background-color: rgba(0, 128, 0, 0.096);
+}
+
+.no-axis {
+  background-color: #ffdd45;
+}
+.no-analysis {
+  background-color: #ff9945;
+}
+.no-e-g-axis {
+  background-color: #40d2ff;
+}
+.no-file {
+  background-color: #bebebe;
+}
+
+.no-file:hover {
+  /* padding: 2px 10px;
+        display: inline-block; */
+  background-color: #7a7a7a;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  justify-items: stretch;
+  width: 100%;
+  gap: 20px;
+
+  position: relative;
+}
+
+.column {
+  padding: 60px;
+  display: flex;
+  justify-content: start;
+}
+
+.column-inside {
+  position: absolute;
+  right: 0;
+  bottom: 50%;
+  transform: translate(110%, 50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 40px 20px;
+  background-color: #fff;
+  border: 1px dashed black;
+  border-radius: 5px;
+}
+
+.lejant {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* align-items: center; */
+}
+
+/* .column-inside h2 {
+  display: block;
+  text-align: center;
+  width: 60%;
+  padding-bottom: 4px;
+  border-bottom: 1px dashed rgb(116, 116, 116);
+} */
+
+.lejant-list {
+  display: block;
+  width: 250px;
+}
+
+.lejant-elements {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.analysis-system {
+  margin: 0;
+  width: 350px;
+}
+
+.side-by-side-list {
+  display: inline-block;
+}
+
+.center {
+  align-items: center;
+  text-align: center;
+}
+/* li a:first-child {
+        border-right: 1px dashed rgb(201, 201, 201);
+        border-radius: 0;
+        margin-right: 3px;
+      } */
