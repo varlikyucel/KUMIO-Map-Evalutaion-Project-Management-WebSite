@@ -36,6 +36,11 @@ a:active {
   /* border-radius: 5px; */
 }
 
+.logo a:hover,
+.logo a:active {
+  background-color: #ffffff00;
+}
+
 .image-link:link,
 .image-link:visited {
   padding: 2px 0px;
@@ -124,7 +129,9 @@ a:active {
 
 .logo {
   text-align: center;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 5px;
 }
 .footer {
   text-align: center;
