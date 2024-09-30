@@ -60,7 +60,7 @@ a:active {
 
 .main-canvas {
   /*height: 100vh;*/
-  max-width: 1850px;
+  max-width: 1400px;
   margin: 0 auto;
   display: flex;
 
@@ -74,7 +74,7 @@ a:active {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 1400px;
+
   /* margin: 0 auto;  */
   align-items: center;
 }
@@ -235,27 +235,46 @@ li {
 }
 
 .column-inside {
-  position: absolute;
-  right: -50px;
-  bottom: 50%;
-  transform: translate(100%, 50%);
-
-  width: 400px;
+  margin-top: 20px;
   display: flex;
-  flex-direction: column;
+  width: 100%;
+  height: 300px;
   align-items: center;
-  gap: 20px;
+  justify-content: space-around;
+
   padding: 40px 20px;
   background-color: #fff;
   border: 1px dashed black;
   border-radius: 5px;
 }
 
+.divider-vertical {
+  height: 250px;
+  width: 1px;
+  border-right: 1px dashed black;
+}
+
+.divider-horizontal {
+  width: 200px;
+  height: 1px;
+  border-bottom: 1px dashed black;
+}
+
 .lejant {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  /* align-items: center; */
+  align-items: center;
+}
+
+.lejant p {
+  font-size: 12px;
+}
+
+.bHarf p {
+  font-size: 20px;
+  text-align: center;
+  padding: 0 10px;
 }
 
 /* .column-inside h2 {
