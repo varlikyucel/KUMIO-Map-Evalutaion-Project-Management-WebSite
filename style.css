@@ -43,7 +43,7 @@ a:active {
 
 .image-link:link,
 .image-link:visited {
-  padding: 2px 0px;
+  padding: 2px 0 2px 4px;
   display: inline-block;
 }
 
@@ -182,7 +182,7 @@ li {
   align-items: center;
   gap: 2px;
   display: grid;
-  grid-template-columns: 4fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 4fr 1fr 1fr 1fr;
 }
 
 .nav-list li {
@@ -332,3 +332,25 @@ li {
         border-radius: 0;
         margin-right: 3px;
       } */
+
+.icons {
+  width: 18px;
+  height: 18px;
+  color: #0e5e08;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons--error {
+  color: #ee0000;
+}
+.icons--alert {
+  color: #ffbf00;
+}
+
+.vertical-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
