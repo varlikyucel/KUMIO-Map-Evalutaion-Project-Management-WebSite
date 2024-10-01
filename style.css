@@ -226,6 +226,10 @@ li {
   background-color: #bebebe;
 }
 
+.new {
+  background-color: #d5f5d4;
+}
+
 .content {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -397,13 +401,13 @@ li {
 }
 
 .OKG::after {
-  content: "13";
+  content: "20";
 }
 
 .KGH::after {
-  content: "13";
+  content: "17";
 }
 
 .OKGH::after {
-  content: "15";
+  content: "20";
 }
