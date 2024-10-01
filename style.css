@@ -375,39 +375,88 @@ li {
 .KGH::after,
 .OKGH::after {
   position: absolute;
+  font-size: 12px;
   font-weight: 700;
   top: 0;
   right: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #ffffffcb;
-  transform: translate(8px, -50%);
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
+  background-color: #eeffed;
+  left: 50%;
+  transform: translate(0px, -50%);
+  width: 85px;
+  height: 20px;
+  border-radius: 5px;
   border: 1px solid black;
 
-  content: "30";
+  content: "Analysis:30";
   color: #222222;
 }
 
 .OTG::after {
-  content: "30";
+  content: "Analysis:30";
 }
 
 .KG::after {
-  content: "15";
+  content: "Analysis:15";
 }
 
 .OKG::after {
-  content: "20";
+  content: "Analysis:20";
 }
 
 .KGH::after {
-  content: "17";
+  content: "Analysis:17";
 }
 
 .OKGH::after {
-  content: "20";
+  content: "Analysis:20";
+}
+
+.TG::before,
+.OTG::before,
+.KG::before,
+.OKG::before,
+.KGH::before,
+.OKGH::before {
+  position: absolute;
+  font-size: 12px;
+  font-weight: 700;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff7ea;
+  left: 50%;
+
+  transform: translate(-110%, -50%);
+  width: 75px;
+  height: 20px;
+  border-radius: 5px;
+  border: 1px solid black;
+
+  content: "Toplam:30";
+  color: #222222;
+}
+
+.OTG::before {
+  content: "Total:31";
+}
+
+.KG::before {
+  content: "Total:16";
+}
+
+.OKG::before {
+  content: "Total:21";
+}
+
+.KGH::before {
+  content: "Total:18";
+}
+
+.OKGH::before {
+  content: "Total:20";
 }
