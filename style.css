@@ -259,18 +259,6 @@ li {
   border-radius: 5px;
 }
 
-.divider-vertical {
-  height: 250px;
-  width: 1px;
-  border-right: 1px dashed black;
-}
-
-.divider-horizontal {
-  width: 200px;
-  height: 1px;
-  border-bottom: 1px dashed black;
-}
-
 .lejant {
   display: flex;
   flex-direction: column;
@@ -315,18 +303,6 @@ li {
   display: inline-block;
 }
 
-.center {
-  align-items: center;
-  text-align: center;
-}
-
-.two-span {
-  grid-column: span 2;
-}
-.full-span {
-  grid-column: 1 / -1;
-}
-
 .col.graph-links {
   margin: 0;
   padding: 10px;
@@ -359,21 +335,16 @@ li {
   gap: 2px;
 }
 
-.TG,
-.OTG,
-.KG,
-.OKG,
-.KGH,
-.OKGH {
+/* Counter */
+/* ////////////////////////// */
+/* start */
+
+.col-experiment-list {
   position: relative;
 }
 
-.TG::after,
-.OTG::after,
-.KG::after,
-.OKG::after,
-.KGH::after,
-.OKGH::after {
+.col-experiment-list::after,
+.col-experiment-list::before {
   position: absolute;
   font-size: 12px;
   font-weight: 700;
@@ -382,16 +353,16 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #eeffed;
   left: 50%;
-  transform: translate(0px, -50%);
   width: 85px;
   height: 20px;
   border-radius: 5px;
-  border: 1px solid black;
+  border: 1px solid #333;
+  color: #222222;
 
   content: "Analysis:30";
-  color: #222222;
+  background-color: #eeffed;
+  transform: translate(0px, -50%);
 }
 
 .OTG::after {
@@ -414,31 +385,10 @@ li {
   content: "Analysis:20";
 }
 
-.TG::before,
-.OTG::before,
-.KG::before,
-.OKG::before,
-.KGH::before,
-.OKGH::before {
-  position: absolute;
-  font-size: 12px;
-  font-weight: 700;
-  top: 0;
-  right: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #fff7ea;
-  left: 50%;
-
+.col-experiment-list::before {
   transform: translate(-110%, -50%);
-  width: 75px;
-  height: 20px;
-  border-radius: 5px;
-  border: 1px solid black;
-
+  background-color: #fff7ea;
   content: "Total:30";
-  color: #222222;
 }
 
 .OTG::before {
@@ -461,9 +411,45 @@ li {
   content: "Total:20";
 }
 
+/* Counter */
+/* ////////////////////////// */
+/* End */
+
+/* HELPERS */
+/* ////////////////////// */
+/* Start */
+
 .margin-bottom {
   margin-bottom: 10px;
 }
+
+.center {
+  align-items: center;
+  text-align: center;
+}
+
+.two-span {
+  grid-column: span 2;
+}
+.full-span {
+  grid-column: 1 / -1;
+}
+
+.divider-vertical {
+  height: 250px;
+  width: 1px;
+  border-right: 1px dashed black;
+}
+
+.divider-horizontal {
+  width: 200px;
+  height: 1px;
+  border-bottom: 1px dashed black;
+}
+
+/* HELPERS */
+/* ////////////////////// */
+/* End */
 
 .analysis-summary-header {
   margin-bottom: 10px;
