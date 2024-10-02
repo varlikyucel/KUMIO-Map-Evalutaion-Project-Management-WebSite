@@ -96,7 +96,7 @@ a:active {
 
 .navigation {
   width: 100%;
-  padding: 0 0 20px 0;
+  margin-bottom: 20px;
 }
 
 .nav-list {
