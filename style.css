@@ -460,3 +460,20 @@ li {
 .OKGH::before {
   content: "Total:20";
 }
+
+.margin-bottom {
+  margin-bottom: 10px;
+}
+
+.analysis-summary-header {
+  margin-bottom: 10px;
+}
+
+.analysis-summary-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.analysis-summary-list p {
+  font-size: 15px;
+}
