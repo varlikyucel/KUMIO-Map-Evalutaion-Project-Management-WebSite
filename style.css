@@ -216,6 +216,11 @@ li {
 .no-e-g-axis {
   background-color: #40d2ff;
 }
+
+.different {
+  border: 2px dashed red;
+}
+
 .no-file {
   background-color: #bebebe;
 }
@@ -226,9 +231,9 @@ li {
   background-color: #bebebe;
 }
 
-.new {
+/*.new {
   background-color: #d5f5d4;
-}
+}*/
 
 .content {
   display: grid;
@@ -370,7 +375,7 @@ li {
 }
 
 .KG::after {
-  content: "Analysis:15";
+  content: "Analysis:19";
 }
 
 .OKG::after {
@@ -396,7 +401,7 @@ li {
 }
 
 .KG::before {
-  content: "Total:16";
+  content: "Total:20";
 }
 
 .OKG::before {
